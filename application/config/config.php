@@ -27,7 +27,7 @@ $config['base_url']	= $ark_root;
 
 
 define('IMAGE_MAGIC_DIR_PATH','C:\Program Files\ImageMagick-6.9.1-Q16-HDRI\\');
-define('TEMPLATE_SVG_DIR_PATH','C:\wamp\www\Testing\Testing\uploads\template_svg\\');
+define('TEMPLATE_SVG_DIR_PATH','C:\wamp\www\Nikhil\Testing\uploads\template_svg\\');
 define('TEMPLATE_PNG_DIR_PATH','C:\wamp\www\Testing\Testing\uploads\template_png\\');
 define('CLIPART_DIR_PATH','file:///C:/wamp/www/Testing/Testing/uploads/clipart_images//');
 
