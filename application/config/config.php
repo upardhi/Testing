@@ -27,9 +27,9 @@ $config['base_url']	= $ark_root;
 
 
 define('IMAGE_MAGIC_DIR_PATH','C:\Program Files\ImageMagick-6.9.1-Q16-HDRI\\');
-define('TEMPLATE_SVG_DIR_PATH','C:\wamp\www\ark_admin_v2\ark_admin_v2\uploads\template_svg\\');
-define('TEMPLATE_PNG_DIR_PATH','C:\wamp\www\ark_admin_v2\ark_admin_v2\uploads\template_png\\');
-define('CLIPART_DIR_PATH','file:///C:/wamp/www/ark_admin_v2/ark_admin_v2/uploads/clipart_images//');
+define('TEMPLATE_SVG_DIR_PATH','C:\wamp\www\Testing\Testing\uploads\template_svg\\');
+define('TEMPLATE_PNG_DIR_PATH','C:\wamp\www\Testing\Testing\uploads\template_png\\');
+define('CLIPART_DIR_PATH','file:///C:/wamp/www/Testing/Testing/uploads/clipart_images//');
 
 define('HTTP_CSS_PATH', $config['base_url'].'assets/css/');
 define('HTTP_IMAGES_PATH', $config['base_url'].'assets/images/');
