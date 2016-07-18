@@ -1,0 +1,17 @@
+<div class="clearfix" style="border-top:1px solid #000;margin-top:10px">
+       <div class="clearfix" data-rule-container="image">
+         <div class="col-lg-6" >
+            <div class="checkbox anim-checkbox">
+              <input type="checkbox" id="image-ch112" data-prop="allowImageEdit" class="success">
+              <label for="image-ch112">Allow Image Edit</label>
+            </div>
+  
+            <div class="checkbox anim-checkbox">
+              <input type="checkbox" id="image-ch118" data-prop="allowDelete" class="success">
+              <label for="image-ch118">Remove Object</label>
+            </div>
+          </div>
+
+       </div>
+
+</div>
