@@ -24,7 +24,7 @@
 $ark_root  = "http://".$_SERVER['HTTP_HOST'];
 $ark_root .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
 $config['base_url']	= $ark_root;
-
+define('IMAGE_MAGIC_DIR_PATH2','C:\Program Files\ImageMagick-6.9.1-Q16-HDRI2\\');
 
 define('IMAGE_MAGIC_DIR_PATH','C:\Program Files\ImageMagick-6.9.1-Q16-HDRI\\');
 define('TEMPLATE_SVG_DIR_PATH','C:\wamp\www\Testing\Testing\uploads\template_svg\\');
