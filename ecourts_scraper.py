@@ -51,6 +51,14 @@ class SearchResult:
         return self.total_cases > 0
 
 
+_CHROME_CANDIDATES = [
+    "/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
+    "/usr/bin/google-chrome",
+    "/usr/bin/chromium",
+    "/usr/bin/chromium-browser",
+]
+
+
 def _build_driver(headless: bool = True) -> webdriver.Chrome:
     opts = Options()
     if headless:
@@ -64,7 +72,17 @@ def _build_driver(headless: bool = True) -> webdriver.Chrome:
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/120.0.0.0 Safari/537.36"
     )
-    return webdriver.Chrome(options=opts)
+
+    import os
+    for candidate in _CHROME_CANDIDATES:
+        if os.path.isfile(candidate):
+            opts.binary_location = candidate
+            log.info("Using Chrome binary: %s", candidate)
+            break
+
+    from selenium.webdriver.chrome.service import Service
+    service = Service(executable_path="/opt/node22/bin/chromedriver")
+    return webdriver.Chrome(service=service, options=opts)
 
 
 def _parse_case_rows(driver: webdriver.Chrome) -> list[CourtCase]:
